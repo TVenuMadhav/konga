@@ -83,7 +83,8 @@ module.exports.connections = {
     database: process.env.DB_DATABASE ||'konga_database',
     // schema: process.env.DB_PG_SCHEMA ||'public',
     poolSize: process.env.DB_POOLSIZE || 10,
-    ssl: process.env.DB_SSL ? true : false // If set, assume it's true
+    ssl: process.env.DB_SSL ? true : false, // If set, assume it's true
+    isVersion12OrNewer: true // Compatible with Postgres?
   },
 
   /**
